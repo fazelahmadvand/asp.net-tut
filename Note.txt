@@ -1,0 +1,2 @@
+in large amount of DB items like items in categories, always categoies will be automaticly update with any changes?
+

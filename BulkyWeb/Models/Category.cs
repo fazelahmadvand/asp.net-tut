@@ -6,6 +6,7 @@ namespace BulkyWeb.Models
     {
         [Key]
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
         public int DisplayIndex { get; set; }
 
