@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hub\\source\\repos\\Bulky\\BulkyWeb\\BulkyWeb.csproj": {}
+    "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\BulkyWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hub\\source\\repos\\Bulky\\BulkyWeb\\BulkyWeb.csproj": {
+    "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\BulkyWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hub\\source\\repos\\Bulky\\BulkyWeb\\BulkyWeb.csproj",
+        "projectUniqueName": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\BulkyWeb.csproj",
         "projectName": "BulkyWeb",
-        "projectPath": "C:\\Users\\Hub\\source\\repos\\Bulky\\BulkyWeb\\BulkyWeb.csproj",
-        "packagesPath": "C:\\Users\\Hub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hub\\source\\repos\\Bulky\\BulkyWeb\\obj\\",
+        "projectPath": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\BulkyWeb.csproj",
+        "packagesPath": "C:\\Users\\Divine\\.nuget\\packages\\",
+        "outputPath": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Divine\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,6 +43,22 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0-rc.2.23480.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0-rc.2.23480.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0-rc.2.23480.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
