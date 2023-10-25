@@ -9,7 +9,7 @@
             </h2>
         </div>
         <div class="col-6 text-end">
-            <a asp-controller="" asp-action="" class="btn btn-primary">
+            <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
                 <i class="bi bi-plus-square"></i> Create
             </a>
         </div>
@@ -31,7 +31,7 @@
         <tbody>
 
             @{
-                var ordered = Model.OrderByDescending(u => u.DisplayIndex);
+                var ordered = Model.OrderBy(u => u.DisplayIndex);
                 foreach (var item in ordered)
                 {
                     <tr>
