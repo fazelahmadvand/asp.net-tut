@@ -282,3 +282,9 @@ A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\runtimes\win\
 A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Bulky.DataAccess.dll
+A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Bulky.Models.dll
+A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Bulky.Utility.dll
+A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Bulky.DataAccess.pdb
+A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Bulky.Models.pdb
+A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Bulky.Utility.pdb

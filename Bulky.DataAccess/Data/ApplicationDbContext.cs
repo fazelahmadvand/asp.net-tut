@@ -1,8 +1,8 @@
-﻿using BulkyWeb.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Bulky.Models;
 
-namespace BulkyWeb.Data
+namespace Bulky.DataAccess.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -24,6 +24,7 @@ namespace BulkyWeb.Data
 
 
         }
+
 
     }
 }
