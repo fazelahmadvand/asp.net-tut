@@ -1,4 +1,6 @@
 ﻿using Bulky.DataAccess.Data;
+using Bulky.DataAccess.Repository;
+using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,18 +8,17 @@ namespace Bulky.Controllers
 {
     public class CategoryController : Controller
     {
-
-        private readonly ApplicationDbContext db;
-
-        public CategoryController(ApplicationDbContext db)
+        private readonly ICategoryRepository repository;
+        public CategoryController(ICategoryRepository db)
         {
-            this.db = db;
+            repository = db;
         }
 
         public IActionResult Index()
         {
-            var objs = db.Categories.ToList();
-            return View(objs);
+            //var objs = db.Categories.ToList();
+
+            return View(repository.GetAll().ToList());
         }
 
         public IActionResult Create()
@@ -30,8 +31,10 @@ namespace Bulky.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Categories.Update(category);
-                db.SaveChanges();
+                //db.Categories.Update(category);
+                //db.SaveChanges();
+                repository.Add(category);
+                repository.Save();
                 TempData["success"] = "Category Create Complete";
 
                 return RedirectToAction("Index");
@@ -44,8 +47,11 @@ namespace Bulky.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Categories.Update(category);
-                db.SaveChanges();
+                //db.Categories.Update(category);
+                //db.SaveChanges();
+                repository.Update(category);
+                repository.Save();
+
                 TempData["success"] = "Category Edit Complete";
                 return RedirectToAction("Index");
             }
@@ -58,7 +64,7 @@ namespace Bulky.Controllers
             {
                 return NotFound();
             }
-            var cat = db.Categories.Find(id);
+            var cat = repository.Get(c => c.Id.Equals(id));//db.Categories.Find(id);
             if (cat == null)
             {
                 return NotFound();
@@ -74,25 +80,28 @@ namespace Bulky.Controllers
             {
                 return NotFound();
             }
-            var cat = db.Categories.Find(id);
+            var cat = repository.Get(c => c.Id.Equals(id));//db.Categories.Find(id);
             if (cat == null)
             {
                 return NotFound();
             }
             return View(cat);
-            
+
         }
 
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePost(int? id)//wtf happened?
         {
-            var cat = db.Categories.Find(id);
+            var cat = repository.Get(c => c.Id.Equals(id));
             if (cat == null)
             {
                 return NotFound();
             }
-            db.Categories.Remove(cat);
-            db.SaveChanges();
+            //db.Categories.Remove(cat);
+            //db.SaveChanges();
+            repository.Remove(cat);
+            repository.Save();
+
             TempData["success"] = "Category Delete Complete";
 
             return RedirectToAction("Index");
