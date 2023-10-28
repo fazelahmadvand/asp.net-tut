@@ -3,6 +3,7 @@ using Bulky.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bulky.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231028214100_NewStart")]
+    partial class NewStart
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -74,9 +77,6 @@ namespace Bulky.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -103,8 +103,6 @@ namespace Bulky.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
-
                     b.ToTable("Products");
 
                     b.HasData(
@@ -112,7 +110,6 @@ namespace Bulky.DataAccess.Migrations
                         {
                             Id = 1,
                             Author = "John Wick",
-                            CategoryId = 1,
                             Description = "How you doing?",
                             ISBN = "SWD132309",
                             ListPrice = 99.0,
@@ -125,7 +122,6 @@ namespace Bulky.DataAccess.Migrations
                         {
                             Id = 2,
                             Author = "IDK",
-                            CategoryId = 1,
                             Description = "Some Day You Will Have It Too",
                             ISBN = "SJKCPE2309",
                             ListPrice = 97.0,
@@ -138,7 +134,6 @@ namespace Bulky.DataAccess.Migrations
                         {
                             Id = 3,
                             Author = "A Man Life",
-                            CategoryId = 1,
                             Description = "A Man Will Do Everything For When Someone Enter His Life Be Good",
                             ISBN = "SWKVLR09",
                             ListPrice = 79.0,
@@ -147,17 +142,6 @@ namespace Bulky.DataAccess.Migrations
                             Price50 = 60.0,
                             Title = "Work"
                         });
-                });
-
-            modelBuilder.Entity("Bulky.Models.Product", b =>
-                {
-                    b.HasOne("Bulky.Models.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }
