@@ -1,0 +1,55 @@
+﻿@model Product
+
+<form method="post">
+    <h2>Edit Product</h2>
+    <div asp-validation-summary="All"></div>
+    <div class="form-floating mb-3">
+        <input asp-for="Title" type="text" class="form-control" placeholder="Author Name">
+        <label asp-for="Title" for="floatingInput">Author Name</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Description" type="text" class="form-control" placeholder="Description">
+        <label asp-for="Description" for="floatingInput">Description</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Author" type="text" class="form-control" placeholder="Author Name">
+        <label asp-for="Author" for="floatingInput">Author Name</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input asp-for="ISBN" type="text" class="form-control" placeholder="ISBN">
+        <label asp-for="ISBN" for="floatingInput">ISBN</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input asp-for="ListPrice" type="number" class="form-control" placeholder="List Price">
+        <label asp-for="ListPrice" for="floatingInput">List Price</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input asp-for="Price" type="number" class="form-control" placeholder="Price">
+        <label asp-for="Price" for="floatingInput">Price</label>
+    </div>
+
+
+    <div class="form-floating mb-3">
+        <input asp-for="Price50" type="number" class="form-control" placeholder="Price50">
+        <label asp-for="Price50" for="floatingInput">Price 50</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input asp-for="Price100" type="number" class="form-control" placeholder="Price 100">
+        <label asp-for="Price100" for="floatingInput">Price 100</label>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-outline-primary">Edit</button>
+        <a asp-controller="Product" asp-action="Index" type="button" class="btn btn-outline-secondary">Back To List</a>
+    </div>
+
+</form>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

@@ -17,9 +17,8 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            //var objs = db.Categories.ToList();
-
-            return View(unit.Category.GetAll().ToList());
+            var list = unit.Category.GetAll().ToList();
+            return View(list);
         }
 
         public IActionResult Create()
