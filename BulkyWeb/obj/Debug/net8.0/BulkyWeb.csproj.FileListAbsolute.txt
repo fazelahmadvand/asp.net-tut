@@ -288,3 +288,6 @@ A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Bulky.Utility
 A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Bulky.DataAccess.pdb
 A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Bulky.Models.pdb
 A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Bulky.Utility.pdb
+A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+A:\UnityWorkProjects\ASP.NET\asp.net-tut\BulkyWeb\obj\Debug\net8.0\BulkyWeb.MvcApplicationPartsAssemblyInfo.cs

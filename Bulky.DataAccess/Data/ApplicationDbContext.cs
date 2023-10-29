@@ -35,6 +35,8 @@ namespace Bulky.DataAccess.Data
                     Price50 = 90,
                     Price100 = 85,
                     CategoryId = 1,
+                    ImageUrl = string.Empty,
+
                 },
                 new Product
                 {
@@ -48,6 +50,7 @@ namespace Bulky.DataAccess.Data
                     Price50 = 87,
                     Price100 = 82,
                     CategoryId = 1,
+                    ImageUrl = string.Empty,
 
                 },
                 new Product
@@ -62,6 +65,7 @@ namespace Bulky.DataAccess.Data
                     Price50 = 60,
                     Price100 = 55,
                     CategoryId = 1,
+                    ImageUrl=string.Empty,
 
                 }
 

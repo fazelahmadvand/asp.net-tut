@@ -1,0 +1,85 @@
+﻿@using Bulky.Models.ViewModels
+@model ProductVM
+
+<form method="post" enctype="multipart/form-data">
+    <input asp-for="Product.Id" hidden />
+    <h2>
+        @(Model.Product.Id == 0 ? "Create" : "Update") Product
+    </h2>
+    <div asp-validation-summary="All"></div>
+    <div class="row">
+        <div class="col-10">
+            <div class="form-floating mb-3">
+                <input asp-for="Product.Author" type="text" class="form-control" placeholder="Author Name">
+                <label asp-for="Product.Author" for="floatingInput">Author Name</label>
+                <span asp-validation-for="Product.Author" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Product.Title" type="text" class="form-control" placeholder="Title">
+                <label asp-for="Product.Title" for="floatingInput">Title</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Product.Description" type="text" class="form-control" placeholder="Description">
+                <label asp-for="Product.Description" for="floatingInput">Description</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Product.ISBN" type="text" class="form-control" placeholder="ISBN">
+                <label asp-for="Product.ISBN" for="floatingInput">ISBN</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" type="text" class="form-control" placeholder="Category">
+                    @* <option disabled selected>Selected</option> *@
+                </select>
+                <label asp-for="Product.CategoryId" for="floatingInput">Category</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Product.ImageUrl" type="file" name="file" class="form-control" placeholder="Image Url">
+                <label asp-for="Product.ImageUrl" for="floatingInput">Image Url</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Product.ListPrice" type="number" class="form-control" placeholder="List Price">
+                <label asp-for="Product.ListPrice" for="floatingInput">List Price</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Product.Price" type="number" class="form-control" placeholder="Price">
+                <label asp-for="Product.Price" for="floatingInput">Price</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="@Model.Product.Price50" type="number" class="form-control" placeholder="Price50">
+                <label asp-for="@Model.Product.Price50" for="floatingInput">Price 50</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="@Model.Product.Price100" type="number" class="form-control" placeholder="Price 100">
+                <label asp-for="@Model.Product.Price100" for="floatingInput">Price 100</label>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="@Model.Product.ImageUrl" width="100%"
+                style="border-radius:5px; border:1px solid #bbb9b9"
+            />
+            
+        </div>
+    </div>
+    
+    <div>
+        @if (Model.Product.Id == 0)
+        {
+            <button type="submit" class="btn btn-outline-success">Create</button>
+
+        }
+        else
+        {
+            <button type="submit" class="btn btn-outline-success">Update</button>
+
+        }
+        <a asp-controller="Product" asp-action="Index" type="button" class="btn btn-outline-secondary">Back To List</a>
+    </div>
+
+</form>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

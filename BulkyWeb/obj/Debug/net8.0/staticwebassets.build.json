@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Bq8CFjfJZSEcQ4BSecQTvUV2NqAu2fo6MGkOe4ROzvk=",
+  "Hash": "kPSlenA5uSxPJgw8l/MmERsgKCTQooqQKtgxZzHUKYs=",
   "Source": "BulkyWeb",
   "BasePath": "_content/BulkyWeb",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\images\\product\\8c1ee561-efa9-464d-a231-723af22267e2",
+      "SourceId": "BulkyWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb",
+      "RelativePath": "images/product/8c1ee561-efa9-464d-a231-723af22267e2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\8c1ee561-efa9-464d-a231-723af22267e2"
     },
     {
       "Identity": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\js\\site.js",
