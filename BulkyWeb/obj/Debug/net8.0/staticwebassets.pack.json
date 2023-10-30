@@ -13,8 +13,32 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\images\\product\\15e62865-14d7-4416-9fde-5f9fb2aad0c0",
+      "PackagePath": "staticwebassets\\images\\product"
+    },
+    {
+      "Id": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\images\\product\\6cc658c3-f921-4180-a5f7-ef93064af224",
+      "PackagePath": "staticwebassets\\images\\product"
+    },
+    {
+      "Id": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\images\\product\\7cf3f294-69af-43d4-81f6-e20b2f218af0",
+      "PackagePath": "staticwebassets\\images\\product"
+    },
+    {
+      "Id": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\images\\product\\8c0de4c0-3048-4286-b342-210ae7a75f64",
+      "PackagePath": "staticwebassets\\images\\product"
+    },
+    {
       "Id": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\images\\product\\8c1ee561-efa9-464d-a231-723af22267e2",
       "PackagePath": "staticwebassets\\images\\product"
+    },
+    {
+      "Id": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\images\\product\\90b88838-65f2-4331-8605-64fc983db1d6.png",
+      "PackagePath": "staticwebassets\\images\\product\\90b88838-65f2-4331-8605-64fc983db1d6.png"
+    },
+    {
+      "Id": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
     },
     {
       "Id": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\js\\site.js",

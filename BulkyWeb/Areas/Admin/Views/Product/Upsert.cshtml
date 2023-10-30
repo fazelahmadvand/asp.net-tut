@@ -3,6 +3,7 @@
 
 <form method="post" enctype="multipart/form-data">
     <input asp-for="Product.Id" hidden />
+    <input asp-for="Product.ImageUrl" hidden />
     <h2>
         @(Model.Product.Id == 0 ? "Create" : "Update") Product
     </h2>
