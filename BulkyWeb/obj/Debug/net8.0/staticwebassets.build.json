@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JcGpJqEQvz+AeQaj3mTgVCcWSH4RKEFgfrSLuZtS1jI=",
+  "Hash": "R2nIQZWko/+t51dbb93hCf1JXYhkbfgs6L3/83Z9yao=",
   "Source": "BulkyWeb",
   "BasePath": "_content/BulkyWeb",
   "Mode": "Default",
@@ -148,25 +148,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\7cf3f294-69af-43d4-81f6-e20b2f218af0"
-    },
-    {
-      "Identity": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\images\\product\\8c0de4c0-3048-4286-b342-210ae7a75f64",
-      "SourceId": "BulkyWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\",
-      "BasePath": "_content/BulkyWeb",
-      "RelativePath": "images/product/8c0de4c0-3048-4286-b342-210ae7a75f64",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\8c0de4c0-3048-4286-b342-210ae7a75f64"
     },
     {
       "Identity": "A:\\UnityWorkProjects\\ASP.NET\\asp.net-tut\\BulkyWeb\\wwwroot\\images\\product\\8c1ee561-efa9-464d-a231-723af22267e2",
