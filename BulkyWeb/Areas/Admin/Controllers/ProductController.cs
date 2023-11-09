@@ -1,4 +1,5 @@
-﻿using Bulky.DataAccess.Repository.IRepository;
+﻿using Bulky.DataAccess.Repository;
+using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Models;
 using Bulky.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -12,11 +13,13 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
         private readonly IUnitOfWork unit;
         private readonly IWebHostEnvironment webEnvironment;
+
         public ProductController(IUnitOfWork db, IWebHostEnvironment webEnvironment)
         {
             unit = db;
             this.webEnvironment = webEnvironment;
         }
+
 
 
         public IActionResult Index()

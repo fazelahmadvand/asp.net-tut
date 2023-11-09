@@ -1,7 +1,8 @@
 ﻿@using Bulky.Models.ViewModels
+@using BulkyWeb.Areas.Admin.Controllers
 @model ProductVM
 
-<form method="post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data" >
     <input asp-for="Product.Id" hidden />
     <input asp-for="Product.ImageUrl" hidden />
     <h2>
@@ -74,7 +75,8 @@
             <button type="submit" class="btn btn-outline-success">Update</button>
 
         }
-        <a asp-controller="Product" asp-action="Index" type="button" class="btn btn-outline-secondary">Back To List</a>
+
+        <a asp-controller="@nameof(ProductController)" asp-action="@nameof(ProductController.Index)" type="button" class="btn btn-outline-secondary">Back To List</a>
     </div>
 
 </form>
